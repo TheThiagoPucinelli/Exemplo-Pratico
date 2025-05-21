@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Loja Simples</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        h1 {
+            color: #2c3e50;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 8px 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: #2980b9;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 1px 2px 5px rgba(0,0,0,0.05);
+            max-width: 500px;
+        }
+    </style>
+</head>
+<body>
+    <h1>🛍️ Loja Simples</h1>
+
+    <div class="card">
+        <h2>Produtos disponíveis:</h2>
+        <ul>
+            <li><a href="carrinho.php?produto=Camisa">Adicionar Camisa</a></li>
+            <li><a href="carrinho.php?produto=Calça">Adicionar Calça</a></li>
+            <li><a href="carrinho.php?produto=Boné">Adicionar Boné</a></li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>🛒 Seu Carrinho:</h2>
+        <iframe src="carrinho.php" width="100%" height="150" style="border:none;"></iframe>
+    </div>
+</body>
+</html>
